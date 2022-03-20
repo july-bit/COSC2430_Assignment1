@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My's Contacts Page</title>
+</head>
+<body>
+ <header>
+      <nav id="navigation">
+        <ul>
+            <li><a href="index.html">CV</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+    <div class = "Contacts">
+        <h1>My Contact Information:</h1>
+        <ul>
+            <li>Email: s3922086@rmit.edu.vn</li>
+            <li>Phone: 011111999</li>
+            <li>Address: Somewhere in SGS</li>
+        </ul>
+        <h1>Social Media Links:</h1>
+        <ul>
+            <li><a href = "https://www.facebook.com/july.my.549/">View my Facebook</a></li>
+            <li><a href = "https://www.linkedin.com">View my LinkedIn</a></li>
+            <li><a href = "https://github.com">View my Github</a></li>
+        </ul>
+    </div>
+    <div class = "Forms">
+    <h1>Reach out to me here!</h1>
+    <form method="post" action="Contact.html" enctype="multipart/form-data">
+        <div class="form-row">
+        <div class="form-label">
+          <label for="Fname">First Name</label>
+        </div>
+        <div class="form-field">
+          <input required id="Fname" type="text" name="name" maxlength="50">
+        </div>
+         <div class="form-label">
+          <label for="Lname">Last Name</label>
+        </div>
+        <div class="form-field">
+          <input required id="Lname" type="text" name="name" maxlength="50">
+        </div>
+              <div class="form-row">
+        <div class="form-label">
+          <label for="email">Your email</label>
+        </div>
+        <div class="form-field">
+          <input required id="email" type="email" name="email">
+        </div>
+        </div>
+        <div class="form-row">
+        <div class="form-label">
+          <label for="phone">Your phone</label>
+        </div>
+        <div class="form-field">
+          <input required id="phone" type="tel" name="phone" pattern="[0-9]{9,13}" title="Enter integer digits (1-9)">
+        </div>
+            <div class="form-row">
+                <div class="form-label">
+                    <label for="purpose">Select your purpose</label>
+                </div>
+                <div class="form-field">
+                    <select id="purpose" name="purpose">
+            <option value="business">Job Opportunities</option>
+            <option value="freelancing">Freelancing</option>
+            <option value="contracts">Contracts</option>
+            <option value="support">Support</option>
+                    </select>
+        <div class="form-label">
+          <label for="message">Your message</label>
+        </div>
+                </div>
+        <div class="form-field">
+          <textarea cols="45" rows="15" required id="message" name="message"></textarea>
+        </div>
+                <div class="form-row">
+        <div class="form-label">
+          <label for="attachment">Your attachment</label>
+        </div>
+        <div class="form-field">
+          <input type="file" name="attachment" id="attachment">
+        </div>
+      </div>
+      <div class="form-row">
+        <input type="reset" value="   Clear   ">
+        <input type="submit" value="   Send   ">
+      </div>
+      </div>
+      </div>
+      </div>
+    </form>
+    </div>
+    <div class="top_nav">
+        <a href="#navigation">Back to the Top</a>
+    </div>
+</main>
+</body>
+    <footer>
+      &copy; RMIT SSET
+    </footer>
+</html>
